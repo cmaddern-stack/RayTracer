@@ -1,0 +1,144 @@
+
+Material "GreyMat" Diffuse (.5, .5, .5) 1
+Material "WhiteMat" Diffuse (.9, .9, .9) 1
+Material "PureWhiteMat" Diffuse (1, 1, 1) 1
+Material "RedMat" Diffuse (1, .5, .5) 1
+Material "GreenMat" Diffuse (.5, 1, .5) 1
+Material "BlueMat" Diffuse (.6, .76, 0.91) 1
+Material "GlassMat" Refractive (1, 1, 1) 1.6
+Material "MirrorMat" Reflective (1, 1, 1) 1
+
+PointLight "Light1" (0, 0.8, 1.5) (.5, .5, .5)
+PointLight "Light2" (-0.5, 0.2, 0.5) (.5, .5, .5)
+PointLight "Light3" (-0.9, 0.9, 2.8) (1, 1, 1)
+
+Sphere "GlassSphere" (-0.25, -0.6, 2.06) 0.2 "MirrorMat"
+Sphere "GlassSphere2" (-0.62, -0.05, 2.72) 0.15 "GlassMat"
+Sphere "GlassSphere3" (0.75, -0.8, 1.69) 0.2 "MirrorMat"
+Sphere "GlassSphere4" (0.75, -0.7, 2.81) 0.1 "PureWhiteMat"
+
+Plane "Floor" (0, -1, 0) (0, 1, 0) "WhiteMat"
+Plane "Roof" (0, 1, 0) (0, -1, 0) "GreyMat"
+
+Triangle "LeftWallA" (-1, -1, 0) (-1, 1, 0) (-1, 1, 3) "BlueMat"
+Triangle "LeftWallB" (-1, -1, 0) (-1, 1, 3) (-1, -1, 3)  "BlueMat"
+
+Triangle "RightWallA" (1, 1, 0) (1, -1, 0) (1, 1, 3) "MirrorMat"
+Triangle "RightWallB" (1, 1, 3) (1, -1, 0) (1, -1, 3)  "MirrorMat"
+
+Triangle "RearWallA" (-1, 1, 0) (-1, -1, 0) (1, 1, 0) "BlueMat"
+Triangle "RearWallB" (1, 1, 0) (-1, -1, 0) (1, -1, 0) "BlueMat"
+
+Triangle "FarWallA" (-1, -1, 3) (-1, 1, 3) (1, 1, 3) "BlueMat"
+Triangle "FarWallB" (-1, -1, 3) (1, 1, 3) (1, -1, 3) "BlueMat"
+
+
+
+Triangle "step1FrontA" (-1, -0.4, 2.63) (-1, -0.2, 2.63) (-0.5, -0.2, 2.63) "RedMat"
+Triangle "step1FrontB" (-1, -0.4, 2.63) (-0.5, -0.2, 2.63) (-0.5, -0.4, 2.63) "RedMat"
+
+Triangle "step1TopB" (-1, -0.2, 3) (-0.5, -0.2, 3) (-1, -0.2, 2.63) "RedMat"
+Triangle "step1TopA" (-1, -0.2, 2.63) (-0.5, -0.2, 3) (-0.5, -0.2, 2.63) "RedMat"
+
+Triangle "step1SideA" (-0.5, -0.4, 2.63) (-0.5, -0.2, 2.63) (-0.5, -0.2, 3) "RedMat"
+Triangle "step1SideB" (-0.5, -0.2, 3) (-0.5, -0.4, 3) (-0.5, -0.4, 2.63) "RedMat"
+
+
+
+Triangle "step2FrontA" (-1, -0.6, 2.25) (-1, -0.4, 2.25) (-0.5, -0.4, 2.25) "RedMat"
+Triangle "step2FrontB" (-1, -0.6, 2.25) (-0.5, -0.4, 2.25) (-0.5, -0.6, 2.25) "RedMat"
+
+Triangle "step2TopB" (-1, -0.4, 2.63) (-0.5, -0.4, 2.63) (-1, -0.4, 2.25) "RedMat"
+Triangle "step2TopA" (-1, -0.4, 2.25) (-0.5, -0.4, 2.63) (-0.5, -0.4, 2.25) "RedMat"
+
+Triangle "step2SideA" (-0.5, -0.6, 2.25) (-0.5, -0.4, 2.25) (-0.5, -0.4, 2.63) "RedMat"
+Triangle "step2SideB" (-0.5, -0.4, 2.63) (-0.5, -0.6, 2.63) (-0.5, -0.6, 2.25) "RedMat"
+
+
+
+Triangle "step3TopB" (-0.5, -0.4, 3) (0, -0.4, 3) (-0.5, -0.4, 2.63) "RedMat"
+Triangle "step3TopA" (-0.5, -0.4, 2.63) (0, -0.4, 3) (0, -0.4, 2.63) "RedMat"
+
+Triangle "step3FrontA" (-0.5, -0.6, 2.63) (-0.5, -0.4, 2.63) (0, -0.4, 2.63) "RedMat"
+Triangle "step3FrontB" (-0.5, -0.6, 2.63) (0, -0.4, 2.63) (0, -0.6, 2.63) "RedMat"
+
+Triangle "step3SideA" (0, -0.6, 2.63) (0, -0.4, 2.63) (0, -0.4, 3) "RedMat"
+Triangle "step3SideB" (0, -0.4, 3) (0, -0.6, 3) (0, -0.6, 2.63) "RedMat"
+
+
+
+Triangle "step4FrontA" (-1, -0.8, 1.87) (-1, -0.6, 1.87) (-0.5, -0.6, 1.87) "RedMat"
+Triangle "step4FrontB" (-1, -0.8, 1.87) (-0.5, -0.6, 1.87) (-0.5, -0.8, 1.87) "RedMat"
+
+Triangle "step4TopB" (-1, -0.6, 2.25) (-0.5, -0.6, 2.25) (-1, -0.6, 1.87) "RedMat"
+Triangle "step4TopA" (-1, -0.6, 1.87) (-0.5, -0.6, 2.25) (-0.5, -0.6, 1.87) "RedMat"
+
+Triangle "step4SideA" (-0.5, -0.8, 1.87) (-0.5, -0.6, 1.87) (-0.5, -0.6, 2.25) "RedMat"
+Triangle "step4SideB" (-0.5, -0.6, 2.25) (-0.5, -0.8, 2.25) (-0.5, -0.8, 1.87) "RedMat"
+
+
+
+Triangle "step5FrontA" (-0.5, -0.8, 2.25) (-0.5, -0.6, 2.25) (0, -0.6, 2.25) "RedMat"
+Triangle "step5FrontB" (-0.5, -0.8, 2.25) (0, -0.6, 2.25) (0, -0.8, 2.25) "RedMat"
+
+Triangle "step5TopB" (-0.5, -0.6, 2.63) (0, -0.6, 2.63) (-0.5, -0.6, 2.25) "RedMat"
+Triangle "step5TopA" (-0.5, -0.6, 2.25) (0, -0.6, 2.63) (0, -0.6, 2.25) "RedMat"
+
+Triangle "step5SideA" (0, -0.8, 2.25) (0, -0.6, 2.25) (0, -0.6, 2.63) "RedMat"
+Triangle "step5SideB" (0, -0.6, 2.63) (0, -0.8, 2.63) (0, -0.8, 2.25) "RedMat"
+
+
+
+Triangle "step6FrontA" (0, -0.8, 2.63) (0, -0.6, 2.63) (0.5, -0.6, 2.63) "RedMat"
+Triangle "step6FrontB" (0, -0.8, 2.63) (0.5, -0.6, 2.63) (0.5, -0.8, 2.63) "RedMat"
+
+Triangle "step6TopB" (0, -0.6, 3) (0.5, -0.6, 3) (0, -0.6, 2.63) "RedMat"
+Triangle "step6TopA" (0, -0.6, 2.63) (0.5, -0.6, 3) (0.5, -0.6, 2.63) "RedMat"
+
+Triangle "step6SideA" (0.5, -0.8, 2.63) (0.5, -0.6, 2.63) (0.5, -0.6, 3) "RedMat"
+Triangle "step6SideB" (0.5, -0.6, 3) (0.5, -0.8, 3) (0.5, -0.8, 2.63) "RedMat"
+
+
+
+Triangle "step7FrontA" (-1, -1, 1.5) (-1, -0.8, 1.5) (-0.5, -0.8, 1.5) "RedMat"
+Triangle "step7FrontB" (-1, -1, 1.5) (-0.5, -0.8, 1.5) (-0.5, -1, 1.5) "RedMat"
+
+Triangle "step7SideA" (-0.5, -1, 1.5) (-0.5, -0.8, 1.5) (-0.5, -0.8, 1.87) "RedMat"
+Triangle "step7SideB" (-0.5, -0.8, 1.87) (-0.5, -1, 1.87) (-0.5, -1, 1.5) "RedMat"
+
+Triangle "step7TopB" (-1, -0.8, 1.87) (-0.5, -0.8, 1.87) (-1, -0.8, 1.5) "RedMat"
+Triangle "step7TopA" (-1, -0.8, 1.5) (-0.5, -0.8, 1.87) (-0.5, -0.8, 1.5) "RedMat"
+
+
+
+Triangle "step8FrontA" (-0.5, -1, 1.87) (-0.5, -0.8, 1.87) (0, -0.8, 1.87) "RedMat"
+Triangle "step8FrontB" (-0.5, -1, 1.87) (0, -0.8, 1.87) (0, -1, 1.87) "RedMat"
+
+Triangle "step8SideA" (0, -1, 1.87) (0, -0.8, 1.87) (0, -0.8, 2.25) "RedMat"
+Triangle "step8SideB" (0, -0.8, 2.25) (0, -1, 2.25) (0, -1, 1.87) "RedMat"
+
+Triangle "step8TopB" (-0.5, -0.8, 2.25) (0, -0.8, 2.25) (-0.5, -0.8, 1.87) "RedMat"
+Triangle "step8TopA" (-0.5, -0.8, 1.87) (0, -0.8, 2.25) (0, -0.8, 1.87) "RedMat"
+
+
+
+Triangle "step9FrontA" (0, -1, 2.25) (0, -0.8, 2.25) (0.5, -0.8, 2.25) "RedMat"
+Triangle "step9FrontB" (0, -1, 2.25) (0.5, -0.8, 2.25) (0.5, -1, 2.25) "RedMat"
+
+Triangle "step9SideA" (0.5, -1, 2.25) (0.5, -0.8, 2.25) (0.5, -0.8, 2.63) "RedMat"
+Triangle "step9SideB" (0.5, -0.8, 2.63) (0.5, -1, 2.63) (0.5, -1, 2.25) "RedMat"
+
+Triangle "step9TopB" (0, -0.8, 2.63) (0.5, -0.8, 2.63) (0, -0.8, 2.25) "RedMat"
+Triangle "step9TopA" (0, -0.8, 2.25) (0.5, -0.8, 2.63) (0.5, -0.8, 2.25) "RedMat"
+
+
+
+Triangle "step10FrontA" (0.5, -1, 2.63) (0.5, -0.8, 2.63) (1, -0.8, 2.63) "RedMat"
+Triangle "step10FrontB" (0.5, -1, 2.63) (1, -0.8, 2.63) (1, -1, 2.63) "RedMat"
+
+Triangle "step10TopB" (0.5, -0.8, 3) (1, -0.8, 3) (0.5, -0.8, 2.63) "RedMat"
+Triangle "step10TopA" (0.5, -0.8, 2.63) (1, -0.8, 3) (1, -0.8, 2.63) "RedMat"
+
+
+
+
